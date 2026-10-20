@@ -1,5 +1,9 @@
 # Aether — Market Intelligence Platform
 
+<p align="center">
+  <img src="./preview.jpg" alt="Aether SaaS Landing Page & Overview Dashboard Preview" width="100%">
+</p>
+
 A high-end, immersive SaaS landing page crafted with modern web standards, featuring atmospheric video visuals, smooth inertial scrolling, a sticky glassmorphic navigation bar, and an enterprise product dashboard showcase.
 
 ## ✨ Features
