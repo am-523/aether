@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether — Every Question Leads Somewhere New</title>
+  <meta name="description" content="Discover emerging topics, untapped opportunities, and the conversations shaping tomorrow with Aether Market Intelligence.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23111'/><text x='50%' y='68%' font-size='18' font-family='sans-serif' font-weight='900' fill='%23fff' text-anchor='middle'>N</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Atmospheric Hero Container -->
+  <div class="hero-canvas-container">
+    
+    <!-- Background Cinematic Video with Skyborne Whales -->
+    <div class="hero-background-layer" aria-hidden="true">
+      <video
+        class="bg-video"
+        id="hero-bg-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        poster="./hero-bg.jpg"
+      >
+        <source src="./bgvideo.mp4" type="video/mp4">
+        <source src="/bgvideo.mp4" type="video/mp4">
+      </video>
+      <div class="bg-vignette-overlay"></div>
+    </div>
+
+    <!-- Floating Top Navigation Pill (Fixed / Sticky Across Scroll) -->
+    <header class="top-nav-wrapper">
+      <nav class="floating-nav-pill" id="main-nav-pill">
+        
+        <!-- Logo -->
+        <a href="#" class="nav-brand">
+          <span class="brand-text">Aether</span>
+        </a>
+
+        <!-- Menu Links -->
+        <div class="nav-links">
+          <a href="#solutions" class="nav-link">Solutions</a>
+          <a href="#use-cases" class="nav-link">Use cases</a>
+          <a href="#enterprise" class="nav-link">Enterprise</a>
+        </div>
+
+        <!-- Action Button -->
+        <div class="nav-action">
+          <button class="nav-cta-btn" id="nav-cta">Start Exploring</button>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- Hero Viewport Section: Fills first viewport (100vh) with dashboard peeking at bottom -->
+    <div class="hero-viewport-section">
+      
+      <!-- Main Hero Center Content -->
+      <main class="hero-main-content">
+        <!-- Headline -->
+        <h1 class="hero-headline">
+          <span class="headline-line">Every Question Leads</span>
+          <span class="headline-line">Somewhere New</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle">
+          Discover emerging topics, untapped opportunities, and<br>
+          the conversations shaping tomorrow.
+        </p>
+
+        <!-- CTA Actions -->
+        <div class="hero-cta-row">
+          <button class="primary-explore-btn" id="hero-primary-btn">
+            <span>Start Exploring</span>
+          </button>
+          <button class="play-action-btn" id="hero-play-btn" aria-label="Play Product Video">
+            <svg class="play-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="8 5 19 12 8 19 8 5"/>
+            </svg>
+          </button>
+        </div>
+      </main>
+
+      <!-- Integrations Row (Anchored just above the dashboard peek bar) -->
+      <div class="integrations-block">
+        <span class="integrations-title">Integrate with your trusted tools</span>
+        <div class="tool-badges-row">
+          
+          <!-- 1. Anthropic Claude -->
+          <div class="tool-badge badge-claude" title="Anthropic Claude">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D97757">
+              <path d="M12 2L14 8.5L20 10L14.5 13.5L16 20L11 16L6 20L7.5 13.5L2 10L8 8.5L12 2Z"/>
+            </svg>
+          </div>
+
+          <!-- 2. Google Analytics -->
+          <div class="tool-badge badge-analytics" title="Google Analytics">
+            <svg width="20" height="20" viewBox="0 0 24 24">
+              <rect x="3" y="14" width="4" height="7" rx="1.5" fill="#F4B400"/>
+              <rect x="10" y="8" width="4" height="13" rx="1.5" fill="#E37400"/>
+              <rect x="17" y="3" width="4" height="18" rx="1.5" fill="#E37400"/>
+            </svg>
+          </div>
+
+          <!-- 3. Datadog / Data Pipeline -->
+          <div class="tool-badge badge-datadog" title="Data Pipeline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D32F2F" stroke-width="2.8" stroke-linecap="round">
+              <path d="M4 14C8 6 12 18 16 10C18 6 20 8 20 8"/>
+            </svg>
+          </div>
+
+          <!-- 4. Google BigQuery / Cloud -->
+          <div class="tool-badge badge-gcloud" title="BigQuery / Google Cloud">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#1A73E8">
+              <path d="M12 2L21 7.5V16.5L12 22L3 16.5V7.5L12 2Z"/>
+              <circle cx="12" cy="12" r="3" fill="#ffffff"/>
+            </svg>
+          </div>
+
+          <!-- 5. Miro -->
+          <div class="tool-badge badge-miro" title="Miro Workspace">
+            <svg width="20" height="20" viewBox="0 0 24 24">
+              <rect width="24" height="24" rx="4" fill="#FFD02F"/>
+              <path d="M6 18L10 6H8L4 18H6Z" fill="#050038"/>
+              <path d="M11 18L15 6H13L9 18H11Z" fill="#050038"/>
+              <path d="M16 18L20 6H18L14 18H16Z" fill="#050038"/>
+            </svg>
+          </div>
+
+          <!-- 6. Vercel -->
+          <div class="tool-badge badge-vercel" title="Vercel Infrastructure">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#000000">
+              <path d="M12 2L24 22H0L12 2Z"/>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Full Enterprise Dashboard Application (Image Showcase with Interactive Hotspots & Controls) -->
+    <section class="bottom-dashboard-peek" id="dashboard-app">
+      
+      <!-- Sleek Window Titlebar (macOS Style Window Frame) -->
+      <div class="dashboard-window-header">
+        <div class="window-traffic-lights">
+          <span class="light red"></span>
+          <span class="light yellow"></span>
+          <span class="light green"></span>
+        </div>
+
+        <div class="window-title-pill">
+          <span class="pulse-green-dot"></span>
+          <span>Aether Live Market Intelligence &bull; Global Visibility Engine</span>
+        </div>
+
+        <div class="window-actions">
+          <button class="window-action-btn" id="btn-fullscreen-dash" title="Toggle Fullscreen Lightbox">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="21" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+            <span>Full View</span>
+          </button>
+          <button class="dash-expand-toggle-btn" id="dash-scroll-down-btn" title="Expand Full Dashboard">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dashboard Image Display Canvas -->
+      <div class="dashboard-image-canvas" id="dash-canvas-wrapper">
+        <img
+          src="./dashboard-preview.jpg"
+          alt="Aether Market Intelligence Platform Overview"
+          class="dashboard-main-image"
+          id="dashboard-image-target"
+          width="1024"
+          height="640"
+          loading="eager"
+        >
+
+        <!-- Subtle Interactive Telemetry Pulse Overlays -->
+        <div class="hotspot-pin na-pin" title="North America: +32% Visibility" data-metric="North America: +32% Growth">
+          <span class="pin-wave"></span>
+          <span class="pin-core"></span>
+          <div class="hotspot-tooltip">North America &bull; +32% Surge</div>
+        </div>
+        <div class="hotspot-pin eu-pin" title="Europe: +18% Growth" data-metric="Europe: +18% Growth">
+          <span class="pin-wave"></span>
+          <span class="pin-core"></span>
+          <div class="hotspot-tooltip">Europe &bull; +18% Active</div>
+        </div>
+        <div class="hotspot-pin asia-pin" title="Asia: +46% Momentum" data-metric="Asia: +46% Momentum">
+          <span class="pin-wave"></span>
+          <span class="pin-core"></span>
+          <div class="hotspot-tooltip">Asia &bull; +46% Momentum</div>
+        </div>
+        <div class="hotspot-pin beacon-pin" title="Active Signal Beacon" data-metric="Signal Beacon: Streaming">
+          <span class="pin-wave glow"></span>
+          <span class="pin-core"></span>
+          <div class="hotspot-tooltip">Market Signals Reactor &bull; Live</div>
+        </div>
+      </div>
+
+      <!-- Quick Telemetry Status Footer -->
+      <div class="dashboard-footer-bar">
+        <div class="footer-stat">
+          <span class="lbl">Global Visibility Score:</span>
+          <strong class="val highlight">68.7</strong>
+          <span class="badge pos">+12%</span>
+        </div>
+        <div class="footer-stat">
+          <span class="lbl">Countries Tracked:</span>
+          <strong class="val">186</strong>
+        </div>
+        <div class="footer-stat">
+          <span class="lbl">Total Mentions:</span>
+          <strong class="val">12.4M</strong>
+          <span class="badge pos">+28%</span>
+        </div>
+        <div class="footer-stat">
+          <span class="lbl">Status:</span>
+          <span class="status-live-tag"><span class="mini-live-dot"></span>Real-Time Telemetry</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- High-Res Dashboard Lightbox Modal -->
+    <div id="dash-lightbox-modal" class="lightbox-backdrop" aria-hidden="true">
+      <div class="lightbox-dialog">
+        <button id="lightbox-close" class="lightbox-close-btn">&times;</button>
+        <div class="lightbox-image-container">
+          <img src="./dashboard-preview.jpg" alt="Aether Dashboard Full Resolution" class="lightbox-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle Watermark Badge (like in screenshot) -->
+    <div class="made-with-badge">
+      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 22 22 2 22 12 2"/></svg>
+      <span>Made with Aether</span>
+    </div>
+
+  </div>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog">
+      <button id="modal-close" class="modal-close-btn">&times;</button>
+      <div class="modal-video-card">
+        <div class="modal-play-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><polygon points="8 5 19 12 8 19 8 5"/></svg>
+        </div>
+        <span class="modal-video-text">AETHER INTELLIGENCE ENGINE &bull; 2026 REEL</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
